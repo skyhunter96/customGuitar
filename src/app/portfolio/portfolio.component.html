@@ -1,0 +1,15 @@
+<div class="fh5co-narrow-content">
+    <h2 class="fh5co-heading"> <span>Pogledajte naše dosadašnje radove</span></h2>
+
+    
+    <div class="row">
+
+        <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 work-item" *ngFor="let port of portfolio">
+            <a href="{{ port.src }}">
+              <img src="{{ port.src }}" alt="{{ port.alt }}" class="img-responsive">
+              <h3 class="fh5co-work-title">{{ port.name }}</h3>
+            </a>
+        </div>
+
+    </div> 
+</div>

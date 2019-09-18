@@ -1,0 +1,102 @@
+
+
+ 
+
+ <div>
+     <div class="fh5co-narrow-content"> 
+   <div class="row">
+      <h1>Pošaljite nam poruku</h1>
+      <h3>Ukoliko imate bilo kakvo pitanje, slobodno nas kontaktirajte.</h3>
+     <div class="col-md-4">
+       
+     </div>
+   </div>
+   <form #f="ngForm">
+     <div class="row">
+       <div class="col-md-12">
+         <div class="row">
+           <div class="col-md-6">
+             <div class="form-group">
+               <input required minlength="3"  ngModel name="firstName" #firstName="ngModel" (change)="log(firstName)" type="text" class="form-control" placeholder="Ime">
+               <div class="alert alert-danger" *ngIf="firstName.touched && !firstName.valid">
+                 <div *ngIf="firstName.errors.required">Polje za ime je obavezno</div>
+                 <div *ngIf="firstName.errors.minlength">Polje mora imati minimum {{ firstName.errors.minlength.requiredLength }} karaktera</div>
+               </div>
+               
+             </div>
+             <div class="form-group">
+               <input type="text" required email ngModel name="email" #email="ngModel" (change)="log(email)" class="form-control" placeholder="Email">
+               <div class="alert alert-danger" *ngIf="email.touched && !email.valid">
+                   <div *ngIf="email.errors.required">Polje za e-mail je obavezno</div>
+                   <div *ngIf="email.errors.email">E-mail nije u dobrom formatu</div>
+                 </div>
+             </div>
+             <div class="form-group">
+               <input type="text" required minlength="6" ngModel name="phone" #phone="ngModel" (change)="log(phone)" class="form-control" placeholder="Telefon">
+               <div class="alert alert-danger" *ngIf="phone.touched && !phone.valid">
+                 <div *ngIf="phone.errors.required">Polje za telefon je obavezno</div>
+                 <div *ngIf="phone.errors.minlength">Telefon nije u dobrom formatu</div>
+               </div>
+             </div>
+           </div>
+           <div class="col-md-6">
+             <div class="form-group">
+               <textarea required ngModel name="comment" id="message" cols="30" rows="7" class="form-control" placeholder="Poruka"></textarea>
+             </div>
+             <div class="form-group">
+                <button (click)="onSave($event)" [disabled]="!f.valid" class="btn btn-primary btn-send-message" >Posalji</button>
+             </div>
+           </div>
+           
+         </div>
+       </div>
+       
+     </div>
+   </form>
+ </div>
+ </div>
+
+ <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d181139.35623293242!2d20.28216890008762!3d44.815402869375866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7aa3d7b53fbd%3A0x1db8645cf2177ee4!2z0JHQtdC-0LPRgNCw0LQ!5e0!3m2!1ssr!2srs!4v1568794798843!5m2!1ssr!2srs" width="1290" height="450" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+
+
+ <div class="fh5co-more-contact">
+  <div class="fh5co-narrow-content">
+    <div class="row">
+        <h1>Kontakt podaci</h1>
+      <div class="col-md-4">
+       <div class="fh5co-feature fh5co-feature-sm">
+          <div class="fh5co-icon">
+            <i class="{{ contact_icon }}"></i>
+          </div>
+          <div class="fh5co-text">
+            <p>{{contact_info}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="fh5co-feature fh5co-feature-sm">
+          <div class="fh5co-icon">
+            <i class="{{location_icon}}"></i>
+          </div>
+          <div class="fh5co-text">
+            <p>{{location_info}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="fh5co-feature fh5co-feature-sm">
+          <div class="fh5co-icon">
+            <i class="{{phone_icon}}"></i>
+          </div>
+          <div class="fh5co-text">
+            <p>{{phone_info}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+ 
+ 
+ 

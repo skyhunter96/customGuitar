@@ -1,0 +1,62 @@
+[
+    {
+    "name" : "Super Stratocaster",
+    "src" : "assets/images/work_1.jpg",
+    "alt" : "Guitar image"
+    },
+    {
+    "name" : "Black Maxed-Up Strat",
+    "src" : "assets/images/work_2.jpg",
+    "alt" : "Guitar image"
+    },
+    {
+    "name" : "Elegant Telecaster",
+    "src" : "assets/images/work_3.jpg",
+    "alt" : "Guitar image"
+    },
+    {
+    "name" : "Telecaster '52",
+    "src" : "assets/images/work_4.jpg",
+    "alt" : "Guitar image"
+    },
+    {
+    "name" : "Les Pauler Virgin",
+    "src" : "assets/images/work_5.jpg",
+    "alt" : "Guitar image"
+    },
+    {
+    "name" : "Heavy Metal Beast",
+    "src" : "assets/images/work_6.jpg",
+    "alt" : "Guitar image"
+    },
+    {
+    "name" : "Zakk Paul",
+    "src" : "assets/images/work_7.jpg",
+    "alt" : "Guitar image"
+    },
+    {
+    "name" : "Typical Swagger",
+    "src" : "assets/images/work_8.jpg",
+    "alt" : "Guitar image"
+    },
+    {
+    "name" : "Sweet Guit O' Mine",
+    "src" : "assets/images/work_9.jpg",
+    "alt" : "Guitar image"
+    },
+    {
+    "name" : "Ol' But Gold",
+    "src" : "assets/images/work_10.jpg",
+    "alt" : "Guitar image"
+    },
+    {
+    "name" : "Born to Rock",
+    "src" : "assets/images/work_11.jpg",
+    "alt" : "Guitar image"
+    },
+    {
+    "name" : "Djentleman",
+    "src" : "assets/images/work_12.jpg",
+    "alt" : "Guitar image"
+    }
+]
